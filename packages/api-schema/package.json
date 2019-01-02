@@ -1,0 +1,45 @@
+{
+  "name": "@firebase-monorepo/api-schema",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "吉本光輝",
+  "homepage": "https://github.com/yoshimoto8/test#readme",
+  "license": "ISC",
+  "main": "lib/api-schema.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshimoto8/test.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "prettier --list-different './src/**/*.{js,ts,tsx,scss,json}'",
+    "lint:format": "prettier --write './src/**/*.{js,ts,tsx,scss,json}'",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/yoshimoto8/test/issues"
+  },
+  "dependencies": {
+    "lint-staged": "^8.1.0",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "lint-staged": {
+    "./src/**/*.{js,ts,tsx,scss,json}": [
+      "npm run lint:format",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "release",
+  "scripts": {
+    "build": "webpack && npm run build:copy_entry",
+    "build:copy_entry": "cp ./src/*.* ./dist"
+  },
+  "dependencies": {
+    "firebase-admin": "^6.2.0",
+    "firebase-functions": "^2.1.0"
+  },
+  "devDependencies": {}
+}
